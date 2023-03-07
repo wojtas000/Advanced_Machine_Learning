@@ -64,7 +64,7 @@ class Preprocessor:
     def data_preprocess(self, df, categorical_cols, numerical_cols, num_imputer_strategy='mean'):
         """
         Preprocess dataset before fitting machine learning model. This includes:
-        1. Dealing with NaN values
+        1. Dealing with NaN values - lets be precise ...
         2. One hot encoding of categorical features
         3. Scaling of numerical features
         params:
