@@ -28,8 +28,8 @@ def irls(X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
     """
     # Add columns with combinations of features
 
-    ones = np.ones((X.shape[0], 1))
-    X = np.hstack((ones, X))
+    # ones = np.ones((X.shape[0], 1))
+    # X = np.hstack((ones, X))
     
     if combination_matrix is not None:
         X = add_columns_with_combinations(X, combination_matrix)
@@ -87,6 +87,8 @@ class logistic_regression():
         Returns:
         self
         """
+        ones = np.ones((X.shape[0], 1))
+        X = np.hstack((ones, X))
         self.beta = irls(X, y, max_iterations, tolerance, combination_matrix)
         
         return self
