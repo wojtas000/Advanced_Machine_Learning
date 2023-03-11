@@ -5,14 +5,16 @@ OPIS KONWENCJI:
  TO DO:
 
  Mikołaj:
- - implementacja
+ - implementacja DONE z dokladnoscia do tego ze przy duzych danych sie wywala - jeszcze nie wiem czemu
 
- - dodanie funkcji do tworzenia kombinacji
+ - dodanie funkcji do tworzenia kombinacji DONE
 
- - drugi DATA SET
+ - drugi DATA SET DONE
     - konwersja categorycznych danych do numerycznych - w jaki sposób zrobiłem klasę którą przewiduje - RAPORT
 
 - usuwanie collinear variables
+    - standaryzacja zrobiła megaaa robotę
+    # https://statisticsbyjim.com/regression/multicollinearity-in-regression-analysis/
 
 Janek:
 - sztuczne dane do testów empirycznych
