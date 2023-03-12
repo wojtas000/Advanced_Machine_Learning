@@ -73,7 +73,7 @@ def irls(X, y, regularization='none', C=0, max_iterations=100, tolerance=1e-6, c
         
         # Apply soft-tresholding if we use L1 regularization 
         if regularization == 'l1':
-            beta_new[1:] = np.sign(beta_new[1:]) * np.maximum(0, np.abs(beta_new[1:]) - C)
+            beta_new[1:] = soft_threshold(beta_new[1:], C)
         # Check convergence
         if i>1 and np.max(np.abs(beta_new - beta)) < tolerance:
             break
