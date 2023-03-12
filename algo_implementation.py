@@ -11,8 +11,14 @@ def add_columns_with_combinations(X, comb_matrix, func = np.add):
         X = np.c_[X, func(X[:, comb[0]], X[:, comb[1]])]
     return X
 
+def soft_threshold(x, threshold):
+    """
+    Soft thresholding function
+    """
+    return np.sign(x) * np.maximum(np.abs(x) - threshold, 0)
+
     
-def irls(X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
+def irls(X, y, regularization='none', C=0, max_iterations=100, tolerance=1e-6, combination_matrix = None):
     """
     Iteratively Reweighted Least Squares (IRLS) algorithm for logistic regression.
     
@@ -37,10 +43,6 @@ def irls(X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
     # Initialize beta with zeros
     beta = np.zeros(X.shape[1])
     
-
-    print(X.shape)
-    print(beta.shape)
-    
     # Loop until convergence or maximum iterations reached
     for i in range(max_iterations):
         # Compute probabilities using current coefficients
@@ -52,12 +54,26 @@ def irls(X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
         # Compute gradient and Hessian
         gradient = X.T @ (y - p)
         hessian = -X.T @ W @ X
+
+        # Update gradient and Hessian based on regularization
         
+        if regularization == 'l2':
+            update = np.insert(beta[1:], 0, 0)
+            hessian_update = np.eye(X.shape[1])
+            hessian_update[0][0] = 0
+            gradient -= C * update
+            hessian -= C * hessian_update
+        
+        # If Hessian is invertible stop algorithm
         if np.linalg.det(hessian) == 0:
             break
+        
         # Update coefficients
         beta_new = beta - np.linalg.inv(hessian) @ gradient
         
+        # Apply soft-tresholding if we use L1 regularization 
+        if regularization == 'l1':
+            beta_new[1:] = np.sign(beta_new[1:]) * np.maximum(0, np.abs(beta_new[1:]) - C)
         # Check convergence
         if i>1 and np.max(np.abs(beta_new - beta)) < tolerance:
             break
@@ -69,9 +85,13 @@ def irls(X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
 
 class logistic_regression():
     
-    def __init__(self):
+    def __init__(self, regularization='none', C=0, fit_intercept=True):
         self.beta = None        
-
+        self.intercept_ = None
+        self.coef_ = None
+        self.regularization = regularization
+        self.C = C
+        self.fit_intercept = fit_intercept
 
     def fit(self, X, y, max_iterations=100, tolerance=1e-6, combination_matrix = None):
         """
@@ -87,10 +107,13 @@ class logistic_regression():
         Returns:
         self
         """
-        ones = np.ones((X.shape[0], 1))
-        X = np.hstack((ones, X))
-        self.beta = irls(X, y, max_iterations, tolerance, combination_matrix)
+        if self.fit_intercept==True:
+            ones = np.ones((X.shape[0], 1))
+            X = np.hstack((ones, X))
         
+        self.beta = irls(X, y, self.regularization, self.C, max_iterations, tolerance, combination_matrix)
+        self.intercept_ = self.beta[0]
+        self.coef_ = self.beta[1:]
         return self
     
     def predict(self, X):
@@ -103,10 +126,19 @@ class logistic_regression():
         Returns:
         y (array-like, shape=(n_samples,)): Predicted class labels.
         """
-        ones = np.ones((X.shape[0], 1))
-        X = np.hstack((ones, X))
+        if self.fit_intercept==True:
+            ones = np.ones((X.shape[0], 1))
+            X = np.hstack((ones, X))
+        
         return np.round(sigmoid(X @ self.beta))
     
     def accuracy(self, Xtest, ytest):
+        """
+        Calculate accuracy of the model 
+
+        Parameters:
+        Xtest: Testing data
+        ytest: Testing labels
+        """
         prediction = self.predict(Xtest)
         return np.sum(prediction == ytest)/ytest.size

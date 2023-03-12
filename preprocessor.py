@@ -78,27 +78,33 @@ class Preprocessor:
         binary_cols = [col for col in categorical_cols if df[col].nunique(dropna=True) == 2]
         multivalue_cols = list(set(categorical_cols) - set(binary_cols))
         
-        numerical_transformer = Pipeline(steps=[
+        transformer = []
+        
+        if numerical_cols:
+            numerical_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy=num_imputer_strategy)),
             ('scaler', MinMaxScaler())
             ])
-
-        multivalue_transformer = OneHotEncoder()
-
-        binary_transformer = Pipeline(steps=[
+            transformer.append(('num', numerical_transformer, numerical_cols))
+        
+        if multivalue_cols:
+            multivalue_transformer = OneHotEncoder(drop='first')
+            transformer.append(('mul', multivalue_transformer, multivalue_cols))
+        
+        if binary_cols:
+            binary_transformer = Pipeline(steps=[
             ('imputer', SimpleImputer(strategy='most_frequent')),
             ('encoder', OneHotEncoder(drop='if_binary'))
             ])
+            transformer.append(('bin', binary_transformer, binary_cols))
 
-        preprocessor = ColumnTransformer(transformers=[
-            ('num', numerical_transformer, numerical_cols),
-            ('mul', multivalue_transformer, multivalue_cols),
-            ('bin', binary_transformer, binary_cols)
-            ])
+        preprocessor = ColumnTransformer(transformers=transformer)
 
         processed_data = preprocessor.fit_transform(df)
-        columns = numerical_cols + list(preprocessor.transformers_[1][1].get_feature_names_out()) + binary_cols
-
+        if multivalue_cols:
+            columns = numerical_cols + list(preprocessor.transformers_[1][1].get_feature_names_out()) + binary_cols
+        else:
+            columns = numerical_cols + binary_cols
         X = pd.DataFrame(processed_data, columns=columns)
 
         return X
