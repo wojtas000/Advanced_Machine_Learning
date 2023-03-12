@@ -74,6 +74,7 @@ def irls(X, y, regularization='none', C=0, max_iterations=100, tolerance=1e-6, c
         # Apply soft-tresholding if we use L1 regularization 
         if regularization == 'l1':
             beta_new[1:] = soft_threshold(beta_new[1:], C)
+        
         # Check convergence
         if i>1 and np.max(np.abs(beta_new - beta)) < tolerance:
             break
@@ -86,6 +87,12 @@ def irls(X, y, regularization='none', C=0, max_iterations=100, tolerance=1e-6, c
 class logistic_regression():
     
     def __init__(self, regularization='none', C=0, fit_intercept=True):
+        """
+        Parameters:
+        regularization : {'none', 'l1', 'l2'}, default='none'. Regularization method to apply
+        C : default=0. Strength of regularization penalty  
+        fit_intercept : default=True. Specify whether a column with ones (for the intercept coefficient) should be added to dataframe.
+        """
         self.beta = None        
         self.intercept_ = None
         self.coef_ = None
