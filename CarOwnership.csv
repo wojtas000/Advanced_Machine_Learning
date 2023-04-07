@@ -1,0 +1,501 @@
+Monthly Income,Credit Score,Years of Employment,Finance Status,Finance History,Car,Number of Children
+40000,750.0,10,Good,No issues,Yes,2
+60000,800.0,8,Good,No issues,Yes,1
+25000,650.0,5,Fair,Late payment 2 months ago,No,0
+80000,900.0,12,Excellent,No issues,Yes,3
+100000,700.0,15,Good,Late payment 6 months ago,Yes,2
+50000,750.0,6,Fair,No issues,No,1
+35000,700.0,8,Fair,Late payment 3 months ago,Yes,
+20000,600.0,3,Poor,Late payment 1 month ago,No,
+120000,850.0,20,Excellent,No issues,Yes,
+90000,800.0,10,Good,No issues,Yes,
+,,,,,,
+6000,700.0,3,Good,Excellent,Yes,
+3000,600.0,1,Fair,Poor,No,
+4000,750.0,5,Excellent,Excellent,Yes,
+8000,800.0,7,Good,Excellent,Yes,
+9000,820.0,10,Excellent,Good,Yes,
+12000,900.0,12,Excellent,Excellent,Yes,
+5000,720.0,4,Good,Fair,No,
+7000,780.0,6,Excellent,Good,Yes,
+3500,650.0,2,Fair,Poor,No,
+2500,550.0,1,Poor,Poor,No,
+5500,740.0,8,Good,Excellent,Yes,
+4500,690.0,4,Fair,Fair,No,
+3000,620.0,2,Fair,Poor,No,
+4000,680.0,3,Fair,Fair,No,
+6000,760.0,5,Good,Good,Yes,
+10000,820.0,10,Excellent,Good,Yes,
+3500,670.0,3,Fair,Poor,No,
+2000,500.0,1,Poor,Poor,No,
+2500,550.0,,,,,
+"$4,500 ",720.0,3 years,Stable,No significant issues,Yes,
+"$7,800 ",800.0,5 years,Stable,No significant issues,Yes,
+"$3,200 ",650.0,2 years,Unstable,Missed payments in the past,No,
+"$6,500 ",750.0,7 years,Stable,No significant issues,Yes,
+"$3,000 ",600.0,1 year,Unstable,Missed payments in the past,No,
+"$3,800 ",680.0,4 years,Stable,No significant issues,Yes,
+"$10,000 ",820.0,8 years,Stable,No significant issues,Yes,
+"$2,500 ",600.0,2 years,Unstable,Late payments,No,
+"$5,200 ",720.0,5 years,Stable,No significant issues,Yes,
+"$3,700 ",680.0,3 years,Stable,No significant issues,No,
+"$8,500 ",780.0,6 years,Stable,No significant issues,Yes,
+"$6,200 ",700.0,4 years,Stable,No significant issues,Yes,
+"$2,800 ",620.0,1 year,Unstable,Missed payments in the past,No,
+"$9,000 ",790.0,7 years,Stable,No significant issues,Yes,
+"$3,000 ",610.0,3 years,Unstable,Late payments,No,
+"$4,500 ",700.0,4 years,Stable,No significant issues,No,
+"$2,500 ",590.0,1 year,Unstable,Missed payments in the past,No,
+"$6,000 ",730.0,5 years,Stable,No significant issues,Yes,
+"$3,500 ",650.0,2 years,Unstable,Missed payments in the past,No,
+"$5,800 ",720.0,4 years,Stable,No significant issues,Yes,
+"$6,800 ",760.0,5 years,Stable,No significant issues,Yes,
+"$3,200 ",640.0,2 years,Unstable,Missed payments in the past,No,
+"$4,500 ",690.0,3 years,Stable,No significant issues,Yes,
+"$2,700 ",620.0,1 year,Unstable,Late payments,No,
+"$3,600 ",670.0,2 years,Unstable,Missed payments in the past,No,
+"$9,200 ",820.0,6 years,Good,No significant issues,Yes,
+"$3,100 ",650.0,2 years,Fair,Missed payments in the past,No,
+"$2,500 ",600.0,1 year,Excellent,Missed payments in the past,No,
+"$7,000 ",750.0,8 years,Good,No significant issues,Yes,
+"$3,500 ",680.0,3 years,Excellent,No significant issues,No,
+"$8,500 ",790.0,7 years,Excellent,No significant issues,Yes,
+"$3,200 ",630.0,2 years,Good,Missed payments in the past,No,
+"$4,800 ",710.0,4 years,Excellent,No significant issues,No,
+"$4,200 ",680.0,3 years,Fair,No significant issues,Yes,
+"$4,500 ",660.0,2 years,Poor,Missed payments in the past,No,
+"$3,000 ",620.0,1 year,Good,Late payments,No,
+"$7,500 ",780.0,6 years,Fair,No significant issues,Yes,
+"$9,000 ",820.0,7 years,Fair,No significant issues,Yes,
+"$3,500 ",650.0,2 years,Fair,Missed payments in the past,No,
+"$5,000 ",720.0,4 years,Stable,No significant issues,Yes,
+"$3,800 ",670.0,3 years,Stable,No significant issues,Yes,
+"$2,800 ",630.0,1 year,Unstable,Missed payments in the past,No,
+,,,,,,
+"$6,800 ",760.0,5 years,Stable,No significant issues,Yes,0
+3.2k USD,640.0,2 years,Unstable,Missed payments in the past,No,2
+"$4,500 ",690.0,3 years,Stable,No significant issues,Yes,1
+"$2,700 ",620.0,1 year,Unstable,Late payments,No,0
+"$3,600 ",670.0,2 years,Unstable,Missed payments in the past,No,3
+"$9,200 ",820.0,6 years,Stable,No significant issues,Yes,2
+"$3,100 ",650.0,2 y,Unstable,Missed payments in the past,No,1
+"$2,500 ",600.0,1 year,Unstable,Missed payments in the past,No,0
+"$7,000 ",750.0,8 years,Stable,No significant issues,Yes,2
+"$3,500 ",680.0,3 years,Stable,No significant issues,No,0
+8.5k USD,790.0,7 years,Stable,No significant issues,Yes,3
+"$3,200 ",630.0,2 years,Unstable,Missed payments in the past,No,2
+"$4,800 ",710.0,4 years,Stable,No significant issues,No,1
+"$4,200 ",680.0,3 year,Stable,No significant issues,Yes,0
+"$4,500 ",660.0,2 year,Unstable,Missed payments in the past,No,2
+"$3,000 ",620.0,1 year,Unstable,Late payments,No,0
+"$7,500 ",780.0,6 year,Stable,No significant issues,Yes,1
+9k,820.0,7 y,Stable,No significant issues,Yes,0
+"$3,500 ",650.0,2 years,Unstable,Missed payments in the past,No,2
+"$5,000 ",,,,,,
+,,,,,,
+"$3,000 ",630.0,1 year,Unstable,Late payments,No,0
+"$10,000 ",840.0,10 years,Stable,No significant issues,Yes,2
+"$4,000 ",670.0,3 years,Stable,No significant issues,No,1
+"$8,000 ",780.0,5 years,Stable,No significant issues,Yes,0
+"$3,200 ",640.0,2 years,Unstable,Missed payments in the past,No,1
+"$6,000 ",720.0,5 years,Stable,No significant issues,Yes,2
+"$6,500 ",740.0,6 years,Stable,No significant issues,Yes,0
+"$3,500 ",670.0,2 years,Stable,No significant issues,No,0
+"$3,000 ",610.0,1 year,Unstable,Late payments,No,3
+"$15,000 ",890.0,12 years,Stable,No significant issues,Yes,3
+5k,720.0,5 years,Stable,No significant issues,No,2
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,1
+"$3,500 ",650.0,2 years,Unknow,Missed payments in the past,No,0
+"$3,200 ",670.0,3 y,Stable,No significant issues,No,0
+"$7,000 ",770.0,6 years,Stable,No significant issues,Yes,2
+"$9,500 ",820.0,8 years,Stable,No significant issues,Yes,1
+"$2,500 ",600.0,1 year,Unkonw,Missed payments in the past,No,4
+"$2,800 ",630.0,1 year,Unstable,Missed payments in the past,No,0
+"$7,500 ",760.0,6 years,Stable,No significant issues,Yes,2
+"$10,000 ",820.0,9 years,Stable,No significant issues,Yes,
+"$4,500 ",710.0,4 years,Stable,No significant issues,Yes,2
+"$5,500 ",720.0,3 years,Stable,No significant issues,Yes,0
+"$3,000 ",620.0,2 years,Unstable,Late payment,No,1
+"$9,000 ",820.0,8 years,Stable,No significant issue,Yes,3
+"$3,500 ",680.0,3 years,Stable,No significant issues,No,0
+"$12,000 ",850.0,11 years,Stable,No significant issues,Yes,1
+"$4,200 ",670.0,3 years,Stable,No significant issues,No,2
+"$2,500 ",630.0,1 year,Unstable,Missed payments in the past,No,1
+"$7,500 ",780.0,7 years,Stable,No significant issues,Yes,0
+"$3,800 ",680.0,4 years,Stable,No significant issues,No,0
+"$6,500 ",740.0,5 years,Stable,No significant issues,Yes,2
+15k,800.0,10 years,Stable,No significant issues,Yes,2
+"$2,000 ",610.0,1 year,Unstable,Late payments,No,0
+"$4,500 ",690.0,3 years,Stable,No significant issues,No,1
+"$8,000 ",780.0,7 year,Stable,No significant issues,Yes,2
+"$3,200 ",650.0,2 years,Unstable,Missed payments in the past,No,3
+"$3,000 ",640.0,2 year,Unstable,Missed payments in the past,No,na
+"$12,000 ",830.0,8 year,Stable,No significant issues,Yes,1
+"$5,800 ",730.0,4 year,Stable,No significant issues,Yes,0
+"$1,500 ",560.0,1 year,Unstable,Late payments,No,0
+,,,,,,
+"$8,500 ",790.0,6 years,Stable,No significant issues,Yes,2
+"$3,500 ",640.0,2 years,Unstable,Late payments,No,2
+"$3,200 ",660.0,3 years,Stable,No significant issues,No,na
+"$7,200 ",760.0,5 years,Stable,No significant issues,Yes,0
+"$2,000 ",600.0,1 year,Unstable,Late payments,No,2
+"$6,000 ",740.0,4 years,Stable,No significant issues,Yes,1
+2.8k,620.0,1 year,Unstable,Missed payments in the past,No,2
+7.5k,800.0,6 years,Stable,No significant issues,Yes,0
+"$4,000 ",680.0,3 years,Stable,No significant issues,No,3
+"$3,200 ",670.0,2 years,Unstable,Late payments,No,1
+"$3,800 ",680.0,3 years,Stable,No significant issues,No,0
+"$4,500 ",700.0,4 years,Stable,No significant issues,Yes,2
+5000 usd,720.0,5 year,Stable,No significant issues,Yes,1
+2500 usd,610.0,1 year,Unstable,Late payments,No,0
+8000 usd,820.0,7 years,Stable,No significant issues,Yes,1
+9000 USD,800.0,7 years,Stable,No significant issues,Yes,2
+"$2,500 ",630.0,1 year,Unstable,Late payments,No,1
+"$3,500 ",670.0,3 years,Stable,No significant issues,No,0
+"$6,500 ",780.0,6 years,Stable,No significant issues,Yes,2
+"$4,200 ",690.0,4 years,Stable,No significant issues,No,2
+,,,,,,
+"$5,500 ",720.0,5 years,Stable,No significant issues,Yes,3
+"$2,000 ",590.0,1 year,Unstable,Missed payments in the past,No,1
+"$4,800 ",680.0,4 years,Stable,No significant issues,Yes,2
+"$7,000 ",750.0,6 years,Stable,No significant issues,Yes,1
+"$6,000 ",790.0,5 years,Stable,No significant issues,Yes,2
+"$4,500 ",670.0,3 years,Stable,No significant issues,No,0
+"$4,500 ",710.0,4 years,Stable,No significant issues,Yes,1
+10000 USD,810.0,8 years,Stable,No significant issues,Yes,0
+"$3,000 ",640.0,2 years,Unstable,Late payments,No,3
+"$4,500 ",700.0,4 years,Stable,No significant issues,Yes,0
+"$8,500 ",780.0,7 years,Stable,No significant issues,Yes,2
+"$4,000 ",670.0,3 years,Stable,No significant issues,No,1
+"$9,000 ",800.0,8 years,Stable,No significant issues,Yes,0
+"$3,000 ",620.0,2 years,Unstable,Late payments,No,2
+"$4,000 ",710.0,4 years,Stable,No significant issues,Yes,0
+"$8,000 ",790.0,7,Stable,No significant issues,Yes,1
+"$3,800 ",660.0,3,Stable,No significant issues,No,2
+"$10,000 ",810.0,8,Stable,No significant issues,Yes,3
+3500 USD,650.0,2,Stable,No significant issues,No,0
+2.5k,590.0,1,Unstable,Missed payments in the past,No,1
+"$3,500 ",650.0,3 years,Stable,No significant issues,No,2
+6000 usd,740.0,5 years,Stable,No significant issues,Yes,0
+"$4,500 ",690.0,4 years,Stable,No significant issues,Yes,1
+"$2,800 ",620.0,2 years,Unstable,Late payments,No,0
+"$3,800 ",680.0,3 years,Stable,No significant issues,No,0
+"$7,000 ",780.0,6 years,Stable,No significant issues,Yes,2
+"$3,500 ",670.0,2 years,Stable,No significant issues,No,0
+"$5,500 ",720.0,5 years,Stable,No significant issues,Yes,1
+"$2,500 ",610.0,1 year,Unstable,Late payments,No,1
+"$8,000 ",760.0,7 years,Stable,No significant issues,Yes,0
+4500 usd,710.0,4 years,Stable,No significant issues,Yes,1
+"$2,200 ",590.0,1 year,Unstable,Missed payments in the past,No,0
+"$6,500 ",750.0,5 years,Stable,No significant issues,Yes,1
+"$3,000 ",630.0,2 years,Unstable,Late payments,No,3
+"$7,500 ",800.0,6 years,Stable,No significant issues,Yes,2
+"$4,800 ",690.0,4 years,Stable,No significant issues,Yes,0
+"$5,000 ",730.0,4 years,Stable,No significant issues,Yes,0
+"$4,000 ",650.0,3 years,Stable,No significant issues,No,1
+"$3,500 ",660.0,2 years,Stable,No significant issues,Yes,2
+"$7,500 ",790.0,6 years,Stable,No significant issues,Yes,1
+,,,,,,
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,2
+"$3,800 ",670.0,,Stable,No significant issues,Yes,0
+"$2,800 ",620.0,2 years,Unstable,Late payments,No,1
+"$4,200 ",720.0,4 years,Stable,No significant issues,Yes,3
+"$6,000 ",740.0,5 years,Stable,No significant issues,Yes,0
+"$4,500 ",690.0,4 years,Stable,No significant issues,Yes,2
+"$3,000 ",630.0,2 years,Unstable,Late payments,No,0
+"$6,500 ",780.0,5 years,Stable,No significant issues,Yes,1
+"$2,200 ",590.0,1 year,Unstable,Missed payments in the past,No,2
+"$8,000 ",760.0,6 years,Stable,No significant issues,Yes,0
+"$5,500 ",720.0,5 years,Stable,No significant issues,Yes,2
+"$3,500 ",650.0,3 years,Stable,No significant issues,No,1
+"$6,000 ",740.0,,Stable,No significant issues,Yes,0
+"$4,500 ",690.0,4 years,Stable,No significant issues,Yes,1
+"$2,800 ",620.0,2 years,Unstable,Late payments,No,0
+"$3,800 ",680.0,3 years,Stable,No significant issues,No,0
+"$7,000 ",780.0,6 years,Stable,No significant issues,Yes,2
+"$3,500 ",670.0,2 years,Stable,No significant issues,No,0
+"$5,500 ",720.0,5 years,Stable,No significant issues,Yes,1
+"$2,500 ",610.0,1 year,Unstable,Late payments,No,1
+$8 ,,,,,,
+,,,,,,
+"$5,800 ",710.0,5 years,Stable,No significant issues,Yes,1
+"$7,200 ",750.0,6 years,Stable,No significant issues,Yes,0
+"$4,200 ",680.0,4 years,Stable,No significant issues,Yes,2
+"$3,600 ",660.0,3 years,Stable,No significant issues,Yes,0
+"$2,700 ",610.0,,Unstable,"Late payments, collections",No,1
+"$4,500 ",720.0,,Stable,No significant issues,Yes,3
+"$5,800 ",730.0,,Stable,No significant issues,Yes,0
+"$4,200 ",670.0,,Stable,No significant issues,Yes,2
+"$2,900 ",620.0,,Unstable,"Late payments, collections",No,0
+"$6,200 ",780.0,,Stable,No significant issues,Yes,1
+"$2,000 ",570.0,,Unstable,"Missed payments, collections, charge-offs",No,2
+"$7,500 ",760.0,,Stable,No significant issues,Yes,0
+"$5,000 ",710.0,,Stable,No significant issues,Yes,2
+"$3,200 ",640.0,,Stable,No significant issues,No,1
+"$6,200 ",730.0,,Stable,No significant issues,Yes,0
+"$4,200 ",670.0,,Stable,No significant issues,Yes,1
+"$2,700 ",610.0,,Unstable,"Late payments, collections",No,0
+"$3,600 ",690.0,,Stable,No significant issues,No,0
+"$6,800 ",780.0,,Stable,No significant issues,Yes,2
+"$3,200 ",650.0,,Stable,No significant issues,No,
+"$8,500 ",790.0,,Stable,No significant issues,Yes,1
+"$6,500 ",730.0,,Stable,No significant issues,Yes,0
+"$3,800 ",660.0,,Stable,No significant issues,Yes,1
+"$15,000 ",820.0,10 years,Stable,No significant issues,Yes,2
+"$4,500 ",690.0,4 years,Stable,No significant issues,Yes,0
+"$2,800 ",630.0,2 years,Unstable,"Late payments, collections",No,1
+"$9,000 ",780.0,7 years,Stable,No significant issues,Yes,2
+"$6,000 ",720.0,5 years,Stable,No significant issues,Yes,0
+"$3,500 ",650.0,3 years,Stable,No significant issues,No,2
+"$4,800 ",700.0,4 years,Stable,No significant issues,Yes,0
+"$12,000 ",800.0,9 years,Stable,No significant issues,Yes,1
+"$4,000 ",670.0,4 years,Stable,No significant issues,Yes,1
+"$3,200 ",630.0,2 years,Unstable,"Late payments, collections",Yes,0
+"$7,500 ",760.0,6 years,Stable,No significant issues,Yes,1
+"$4,200 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$6,800 ",760.0,6 years,Stable,No significant issues,Yes,2
+"$3,800 ",660.0,3 years,Stable,No significant issues,Yes,1
+"$5,000 ",720.0,5 years,Stable,No significant issues,Yes,0
+"$7,200 ",740.0,6 years,Stable,No significant issues,Yes,2
+"$4,500 ",690.0,4 years,Stable,No significant issues,Yes,1
+"$3,200 ",,,,,,
+40000,750.0,10,Good,No issues,Yes,2
+60000,800.0,8,Good,No issues,Yes,1
+25000,650.0,5,Fair,Late payment 2 months ago,No,0
+80000,900.0,12,Excellent,No issues,Yes,3
+100000,700.0,15,Good,Late payment 6 months ago,Yes,2
+50000,750.0,6,Fair,No issues,No,1
+35000,700.0,8,Fair,Late payment 3 months ago,Yes,
+20000,600.0,3,Poor,Late payment 1 month ago,No,
+120000,850.0,20,Excellent,No issues,Yes,
+90000,800.0,10,Good,No issues,Yes,
+,,,,,,
+6000,700.0,3,Good,Excellent,Yes,
+3000,600.0,1,Fair,Poor,No,
+4000,750.0,5,Excellent,Excellent,Yes,
+8000,800.0,7,Good,Excellent,Yes,
+9000,820.0,10,Excellent,Good,Yes,
+12000,900.0,12,Excellent,Excellent,Yes,
+5000,720.0,4,Good,Fair,No,
+7000,780.0,6,Excellent,Good,Yes,
+3500,650.0,2,Fair,Poor,No,
+2500,550.0,1,Poor,Poor,No,
+5500,740.0,8,Good,Excellent,Yes,
+4500,690.0,4,Fair,Fair,No,
+3000,620.0,2,Fair,Poor,No,
+4000,680.0,3,Fair,Fair,No,
+6000,760.0,5,Good,Good,Yes,
+10000,820.0,10,Excellent,Good,Yes,
+3500,670.0,3,Fair,Poor,No,
+2000,500.0,1,Poor,Poor,No,
+2500,550.0,,,,No,
+"$4,500 ",720.0,3 years,Stable,No significant issues,Yes,
+"$7,800 ",800.0,5 years,Stable,No significant issues,Yes,
+"$3,200 ",650.0,2 years,Unstable,Missed payments in the past,No,
+"$6,500 ",750.0,7 years,Stable,No significant issues,Yes,
+"$3,000 ",600.0,1 year,Unstable,Missed payments in the past,No,
+"$3,800 ",680.0,4 years,Stable,No significant issues,Yes,
+"$10,000 ",820.0,8 years,Stable,No significant issues,Yes,
+"$2,500 ",600.0,2 years,Unstable,Late payments,No,na
+"$5,200 ",720.0,5 years,Stable,No significant issues,Yes,na
+"$3,700 ",680.0,3 years,Stable,No significant issues,No,na
+"$8,500 ",780.0,6 years,Stable,No significant issues,Yes,na
+"$6,200 ",700.0,4 years,Stable,No significant issues,Yes,na
+"$2,800 ",620.0,1 year,Unstable,Missed payments in the past,No,na
+"$9,000 ",790.0,7 years,Stable,No significant issues,Yes,na
+"$3,000 ",610.0,3 years,Unstable,Late payments,No,na
+"$4,500 ",700.0,4 years,Stable,No significant issues,No,na
+"$2,500 ",590.0,1 year,Unstable,Missed payments in the past,No,na
+"$6,000 ",730.0,5 years,Stable,No significant issues,Yes,na
+"$3,500 ",650.0,2 years,Unstable,Missed payments in the past,No,na
+"$5,800 ",720.0,4 years,Stable,No significant issues,Yes,na
+"$6,800 ",760.0,5 years,Stable,No significant issues,Yes,na
+"$3,200 ",640.0,2 years,Unstable,Missed payments in the past,No,na
+"$4,500 ",690.0,3 years,Stable,No significant issues,Yes,na
+"$2,700 ",620.0,1 year,Unstable,Late payments,No,na
+"$3,600 ",670.0,2 years,Unstable,Missed payments in the past,No,na
+"$9,200 ",820.0,6 years,Good,No significant issues,Yes,na
+"$3,100 ",650.0,2 years,Fair,Missed payments in the past,No,na
+"$2,500 ",600.0,1 year,Excellent,Missed payments in the past,No,na
+"$7,000 ",750.0,8 years,Good,No significant issues,Yes,na
+"$3,500 ",680.0,3 years,Excellent,No significant issues,No,na
+"$8,500 ",790.0,7 years,Excellent,No significant issues,Yes,na
+"$3,200 ",630.0,2 years,Good,Missed payments in the past,No,na
+"$4,800 ",710.0,4 years,Excellent,No significant issues,No,na
+"$4,200 ",680.0,3 years,Fair,No significant issues,Yes,
+"$4,500 ",660.0,2 years,Poor,Missed payments in the past,No,
+"$3,000 ",620.0,1 year,Good,Late payments,No,
+"$7,500 ",780.0,6 years,Fair,No significant issues,Yes,
+"$9,000 ",820.0,7 years,Fair,No significant issues,Yes,
+"$3,500 ",650.0,2 years,Fair,Missed payments in the past,No,
+"$5,000 ",720.0,4 years,Stable,No significant issues,Yes,
+"$3,800 ",670.0,3 years,Stable,No significant issues,Yes,
+"$2,800 ",,1 year,Unstable,Missed payments in the past,No,
+"$6,800 ",,5 years,Stable,No significant issues,Yes,0
+3.2k USD,,2 years,Unstable,Missed payments in the past,No,2
+"$4,500 ",,3 years,Stable,No significant issues,Yes,1
+"$2,700 ",,1 year,Unstable,Late payments,No,0
+"$3,600 ",,2 years,Unstable,Missed payments in the past,No,3
+"$9,200 ",,6 years,Stable,No significant issues,Yes,2
+"$3,100 ",,2 y,Unstable,Missed payments in the past,No,1
+"$2,500 ",,1 year,Unstable,Missed payments in the past,No,0
+"$7,000 ",,8 years,Stable,No significant issues,Yes,2
+"$3,500 ",,3 years,Stable,No significant issues,No,0
+8.5k USD,,7 years,Stable,No significant issues,Yes,3
+"$3,200 ",,2 years,Unstable,Missed payments in the past,No,2
+"$4,800 ",,,Stable,No significant issues,No,1
+"$4,200 ",,3 years,Stable,,Yes,0
+"$4,500 ",,2 years,Unstable,Missed payments in the past,No,2
+"$3,000 ",,1 year,Unstable,Late payments,No,0
+"$7,500 ",,6 years,Stable,No significant issues,Yes,1
+9k,,7 y,Stable,No significant issues,Yes,0
+"$3,500 ",,2 years,Unstable,Missed payments in the past,No,2
+"$5,000 ",,,,,No,
+,,,,,,
+"$3,000 ",,1 year,Unstable,Late payments,No,0
+"$7,800 ",810.0,6 years,Stable,No significant issues,Yes,2
+"$4,100 ",689.0,3 years,Stable,No significant issues,Yes,0
+"$8,200 ",755.0,7 years,Stable,No significant issues,Yes,1
+"$7,000 ",765.0,6 years,Stable,No significant issues,Yes,2
+"$3,900 ",631.0,3 years,Stable,No significant issues,No,2
+"$3,500 ",643.0,2 years,Unstable,"Late payments, collections",No,1
+"$2,900 ",590.0,1 year,Unstable,"Late payments, collections",No,1
+"$4,400 ",,4 years,Stable,No significant issues,Yes,0
+"$6,100 ",718.0,5 years,Stable,No significant issues,,0
+"$3,400 ",610.0,,Stable,No significant issues,Yes,1
+"$8,400 ",,7 years,Stable,No significant issues,,2
+"$4,000 ",670.0,4 years,Stable,No significant issues,Yes,0
+"$5,800 ",710.0,5 years,Stable,No significant issues,Yes,1
+"$3,100 ",598.0,2 years,Unstable,"Late payments, collections",,0
+"$11,000 ",806.0,9 years,Stable,No significant issues,Yes,1
+"$3,700 ",642.0,3 years,Stable,No significant issues,Yes,1
+"$4,600 ",693.0,4 years,Stable,No significant issues,Yes,
+"$5,400 ",728.0,5 years,Stable,No significant issues,Yes,0
+"$6,800 ",724.0,6 years,Stable,No significant issues,Yes,2
+"$4,200 ",672.0,4 years,Stable,No significant issues,Yes,na
+"$7,800 ",810.0,6 years,Stable,No significant issues,Yes,2
+,689.0,3 years,Stable,No significant issues,Yes,0
+"$8,200 ",755.0,7 years,Stable,No significant issues,Yes,1
+"$7,000 ",765.0,6 years,,No significant issues,Yes,2
+"$3,900 ",631.0,3 years,Stable,No significant issues,No,2
+"$3,500 ",643.0,2 years,Unstable,"Late payments, collections",No,1
+"$2,900 ",590.0,1 year,Unstable,"Late payments, collections",No,1
+"$4,400 ",703.0,4 years,Stable,No significant issues,Yes,0
+"$6,100 ",718.0,5 years,Stable,No significant issues,Yes,0
+"$3,400 ",610.0,3 years,Stable,No significant issues,Yes,1
+"$8,400 ",792.0,7 years,Stable,No significant issues,Yes,2
+"$4,000 ",670.0,4 years,Stable,No significant issues,Yes,0
+"$5,800 ",710.0,5 years,Stable,No significant issues,Yes,1
+"$3,100 ",598.0,2 years,Unstable,"Late payments, collections",Yes,0
+11k,806.0,9 years,Stable,No significant issues,Yes,1
+"$3,700 ",642.0,3 years,Stable,No significant issues,Yes,1
+"$4,600 ",693.0,4 years,Stable,No significant issues,Yes,0
+"$5,400 ",728.0,5 years,Stable,No significant issues,Yes,0
+"$6,800 ",724.0,6 years,Stable,No significant issues,Yes,2
+"$4,200 ",672.0,4 years,Stable,No significant issues,Yes,1
+"$4,500 ",678.0,4 years,Stable,No significant issues,Yes,1
+"$5,200 ",723.0,5 years,Stable,No significant issues,Yes,2
+"$7,500 ",775.0,6 years,Stable,No significant issues,Yes,0
+"$6,200 ",720.0,5 years,Stable,No significant issues,Yes,0
+"$7,200 ",758.0,6 years,Stable,No significant issues,Yes,1
+"$2,900 ",610.0,2 years,,"Late payments, collections",No,0
+"$5,400 ",702.0,5 years,Stable,No significant issues,Yes,1
+"$8,600 ",795.0,7 years,Stable,No significant issues,Yes,1
+"$6,800 ",715.0,5 years,,No significant issues,Yes,0
+"$4,000 ",654.0,4 years,Stable,No significant issues,No,1
+3400 usd,590.0,2 years,Unstable,"Late payments, collections",Yes,2
+"$7,000 ",750.0,6 years,Stable,No significant issues,Yes,0
+"$6,900 ",742.0,6 years,Stable,No significant issues,Yes,2
+"$6,800 ",732.0,5 years,Stable,No significant issues,Yes,1
+"$4,300 ",695.0,4 years,Stable,No significant issues,Yes,0
+"$7,200 ",726.0,6 years,Stable,No significant issues,Yes,2
+"$9,200 ",780.0,8 years,Stable,No significant issues,Yes,1
+3200 USD,630.0,3 years,Stable,No significant issues,Yes,2
+"$8,000 ",742.0,7 years,Stable,No significant issues,Yes,1
+"$3,000 ",600.0,2 years,Unstable,"Late payments, collections",No,1
+"$4,800 ",670.0,4 years,Stable,No significant issues,Yes,0
+"$4,000 ",695.0,4 years,Stable,No significant issues,No,0
+"$5,200 ",732.0,5 years,Stable,No significant issues,Yes,2
+"$6,800 ",760.0,6 years,Stable,No significant issues,Yes,0
+"$4,400 ",670.0,4 years,Stable,No significant issues,Yes,1
+"$7,800 ",790.0,7 years,Stable,No significant issues,Yes,0
+"$5,500 ",700.0,5 years,Stable,No significant issues,Yes,2
+"$4,200 ",680.0,3 years,Unstable,"Late payments, collections",Yes,1
+"$10,000 ",820.0,9 years,Stable,No significant issues,Yes,2
+"$7,500 ",750.0,6 years,Stable,No significant issues,Yes,0
+"$6,900 ",725.0,5 years,Stable,No significant issues,Yes,1
+"$3,200 ",630.0,3 years,Unstable,"Late payments, collections",No,0
+"$5,200 ",708.0,5 years,Stable,No significant issues,Yes,2
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,1
+"$9,000 ",790.0,8 years,Stable,No significant issues,Yes,0
+"$3,800 ",650.0,3 years,Stable,No significant issues,Yes,0
+"$7,200 ",750.0,6 years,Stable,No significant issues,Yes,2
+"$3,500 ",650.0,3 years,Unstable,"Late payments, collections",Yes,1
+"$8,200 ",765.0,7 years,Stable,No significant issues,Yes,1
+"$7,000 ",740.0,6 years,Stable,No significant issues,Yes,0
+$,,,,,,
+"$7,500 ",720.0,6 years,Stable,No significant issues,Yes,2
+"$5,200 ",690.0,5 years,Stable,No significant issues,Yes,1
+"$6,000 ",725.0,5 years,Stable,No significant issues,Yes,0
+"$8,000 ",760.0,7 years,Stable,,Yes,2
+"$4,800 ",700.0,4 years,Stable,,Yes,1
+"$7,500 ",780.0,6 years,Stable,,Yes,0
+"$8,500 ",745.0,7 years,Stable,No significant issues,Yes,2
+"$6,500 ",710.0,5 years,Stable,No significant issues,Yes,1
+"$12,000 ",820.0,10 years,Stable,No significant issues,Yes,0
+"$5,800 ",700.0,4 years,Stable,No significant issues,Yes,2
+"$7,200 ",750.0,6 years,Stable,No significant issues,Yes,1
+"$6,000 ",690.0,5 years,Stable,,Yes,0
+"$8,000 ",740.0,7 years,Stable,No significant issues,Yes,1
+"$6,800 ",720.0,5 years,Stable,No significant issues,Yes,2
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$4,200 ",670.0,4 years,Stable,,Yes,1
+"$4,800 ",670.0,4 years,Stable,No significant issues,No,0
+"$10,500 ",790.0,9 years,Stable,No significant issues,Yes,2
+"$8,200 ",740.0,7 years,Stable,No significant issues,Yes,1
+"$5,500 ",700.0,5 years,Stable,No significant issues,Yes,0
+$7 ,,6 years,Stable,No significant issues,Yes,
+,,,,,,
+"$6,800 ",720.0,6 years,Stable,No significant issues,Yes,1
+"$5,500 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$7,000 ",720.0,6 years,Stable,,Yes,2
+"$6,500 ",730.0,5 years,Stable,No significant issues,Yes,1
+"$4,200 ",660.0,3 years,Stable,No significant issues,No,3
+"$5,800 ",690.0,4 years,Stable,No significant issues,Yes,1
+"$11,000 ",800.0,8 years,Stable,No significant issues,Yes,0
+"$8,500 ",750.0,7 years,,No significant issues,Yes,2
+"$3,800 ",650.0,3 years,Stable,No significant issues,No,2
+"$7,500 ",760.0,6 years,Stable,No significant issues,Yes,1
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$8,200 ",740.0,7 years,Stable,No significant issues,Yes,2
+"$5,500 ",690.0,4 years,Stable,No significant issues,Yes,1
+,640.0,3 years,Stable,No significant issues,No,1
+"$3,200 ",620.0,2 years,Stable,No significant issues,No,0
+"$3,800 ",650.0,3 years,Stable,No significant issues,No,2
+"$4,200 ",670.0,4 years,Stable,No significant issues,Yes,1
+"$5,800 ",690.0,4 years,Stable,No significant issues,Yes,0
+"$6,500 ",730.0,5 years,Stable,No significant issues,Yes,2
+"$9,000 ",780.0,,Stable,No significant issues,Yes,1
+"$3,500 ",650.0,,,,,
+,,,,,,
+"$4,800 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$4,200 ",670.0,4 years,Stable,No significant issues,No,1
+"$7,500 ",720.0,6 years,Stable,No significant issues,Yes,2
+"$6,800 ",710.0,5 years,Stable,No significant issues,Yes,1
+"$5,500 ",690.0,4 years,Stable,,Yes,0
+"$5,200 ",680.0,4 years,Stable,No significant issues,No,2
+"$4,500 ",660.0,3 years,Stable,No significant issues,No,1
+"$4,800 ",670.0,4 years,Stable,No significant issues,Yes,0
+"$6,800 ",720.0,6 years,Stable,No significant issues,Yes,1
+"$7,000 ",740.0,5 years,Stable,No significant issues,Yes,0
+"$5,800 ",690.0,4 years,Stable,,No,1
+"$4,500 ",670.0,4 years,Stable,No significant issues,Yes,2
+"$4,800 ",660.0,3 years,Stable,No significant issues,Yes,1
+"$8,500 ",750.0,7 years,Stable,No significant issues,Yes,0
+"$3,500 ",640.0,3 years,Stable,No significant issues,No,1
+"$4,800 ",670.0,4 years,Stable,No significant issues,Yes,2
+"$7,000 ",730.0,5 years,Stable,No significant issues,Yes,0
+"$4,500 ",680.0,4 years,Stable,No significant issues,Yes,0
+"$5,500 ",690.0,4 years,Stable,No significant issues,Yes,1
+"$3,500 ",640.0,3 years,Stable,No significant issues,No,1
+"$3,200 ",641.0,4 years,Stable,No significant issues,No,2
