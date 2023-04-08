@@ -4,11 +4,12 @@ def sigmoid(x):
     """Sigmoid function."""
     return 1 / (1 + np.exp(-x))
 
-
-def add_columns_with_combinations(X, comb_matrix, func = np.add):
+def add_columns_with_combinations(X, comb_matrix, func = np.divide):
     """Add columns with combinations of features."""
+    func_dict = {np.add: '+', np.subtract: '-', np.multiply: '*', np.divide: '/'}
+    cols = X.columns
     for comb in comb_matrix:
-        X = np.c_[X, func(X[:, comb[0]], X[:, comb[1]])]
+        X[f'{cols[comb[0]]}{func_dict[func]}{cols[comb[1]]}'] = func(X.iloc[:,comb[0]], X.iloc[:,comb[1]])
     return X
 
 def soft_threshold(x, threshold):
@@ -39,6 +40,7 @@ def irls(X, y, regularization='none', C=0, max_iterations=100, tolerance=1e-6, c
     
     if combination_matrix is not None:
         X = add_columns_with_combinations(X, combination_matrix)
+        return X
 
     # Initialize beta with zeros
     beta = np.zeros(X.shape[1])
