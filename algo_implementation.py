@@ -1,4 +1,5 @@
 import numpy as np
+import copy
 
 def sigmoid(x):
     """Sigmoid function."""
@@ -6,11 +7,12 @@ def sigmoid(x):
 
 def add_columns_with_combinations(X, comb_matrix, func = np.divide):
     """Add columns with combinations of features."""
+    X_copy = copy.deepcopy(X)
     func_dict = {np.add: '+', np.subtract: '-', np.multiply: '*', np.divide: '/'}
-    cols = X.columns
+    cols = X_copy.columns
     for comb in comb_matrix:
-        X[f'{cols[comb[0]]}{func_dict[func]}{cols[comb[1]]}'] = func(X.iloc[:,comb[0]], X.iloc[:,comb[1]])
-    return X
+        X_copy[f'{comb[0]}{func_dict[func]}{comb[1]}'] = func(X_copy.loc[:,comb[0]], X_copy.loc[:,comb[1]])
+    return X_copy
 
 def soft_threshold(x, threshold):
     """
