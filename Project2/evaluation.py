@@ -9,6 +9,7 @@ from boruta import BorutaPy
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.pipeline import make_pipeline
 from feature_selectors import Debug, RandomForestSelector
+from sklearn.feature_selection import SelectKBest
 
 
 def performance_score(accuracy, n_features):
@@ -38,13 +39,11 @@ def single_evaluation(X_train, y_train, X_val, y_val, selector=PCA(n_components=
         float: Performance score.
         int: Number of features selected.
     """
-
     pipeline = make_pipeline(scaler, selector, Debug(), classifier)
     pipeline.fit(X_train, y_train) 
     accuracy = pipeline.score(X_val, y_val)
     n_features = pipeline.steps[-2][1].shape[1]
     perf_score = performance_score(accuracy, n_features)
-    
     return accuracy, perf_score, n_features
 
 
@@ -70,16 +69,23 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, n_fe
             for n in n_features:
                 if isinstance(selector, PCA):
                     selector.n_components = n
+                elif isinstance(selector, SelectKBest):
+                    selector.k = n
                 else:
                     selector.n_features = n
                 accuracy, perf_score, _ = single_evaluation(X_train, y_train, X_val, y_val, selector, classifier)
 
+                if isinstance(selector, SelectKBest):
+                    selector_name = selector.__class__.__name__ + '_' + selector.score_func.__name__
+                else:
+                    selector_name = selector.__class__.__name__
+                
                 if isinstance(classifier, SVC):
                     classifier_name = classifier.__class__.__name__ + '_' + classifier.kernel
                 else:
                     classifier_name = classifier.__class__.__name__
 
-                df = pd.concat([df, pd.DataFrame([[selector.__class__.__name__, classifier_name, n, accuracy, perf_score]], columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])])
+                df = pd.concat([df, pd.DataFrame([[selector_name, classifier_name, n, accuracy, perf_score]], columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])])
 
     return df
 
@@ -87,7 +93,6 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, n_fe
 
 if __name__=="__main__":
     
-    # test full evaluation
     X, y = load_breast_cancer(return_X_y=True)
     X = pd.DataFrame(X)
     y = pd.Series(y)
@@ -99,8 +104,8 @@ if __name__=="__main__":
     df = full_evaluation(X_train, y_train, X_valid, y_valid, selectors, classifiers, n_features)
     print(df)
 
-    # test single evaluation
     selector = RandomForestSelector()
     classifier = RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1)
     score, perf_score = single_evaluation(X_train, y_train, X_valid, y_valid, selector, classifier)
     print(score, perf_score)
+
