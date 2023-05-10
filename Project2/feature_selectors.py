@@ -10,8 +10,15 @@ from sklearn.datasets import load_breast_cancer
 
 
 class CorrelationSelector(BaseEstimator, TransformerMixin):
-    
+    """
+    Select features based on correlation with target.
+    """
+
     def __init__(self, n_features=10):
+        """
+        Args:
+            n_features (int): Number of features to select.
+        """
         self.n_features = n_features
         self.features = None
     
@@ -29,8 +36,15 @@ class CorrelationSelector(BaseEstimator, TransformerMixin):
 
 
 class MutualInformationSelector(BaseEstimator, TransformerMixin):
-
+    """
+    Select features based on mutual information with target.
+    """
     def __init__(self, n_features=10):
+        """
+        Args:
+            n_features (int): Number of features to select.
+        """
+
         self.n_features = n_features
         self.features = None
     
@@ -47,7 +61,17 @@ class MutualInformationSelector(BaseEstimator, TransformerMixin):
 
 
 class RandomForestSelector(BaseEstimator, TransformerMixin):
+    """
+    Select features based on feature importance from random forest.
+    """
+
     def __init__(self, n_features=10, threshold=None):
+        """
+        Args:
+            n_features (int): Number of features to select.
+            threshold (float): Threshold for feature importance.
+        """
+
         self.n_features = n_features
         self.threshold = threshold
         self.features = None
@@ -75,6 +99,9 @@ class RandomForestSelector(BaseEstimator, TransformerMixin):
     
     
 class Debug(BaseEstimator, TransformerMixin):
+    """
+    Transformer that gives intermediate access to shape of data.
+    """
 
     def transform(self, X):
         self.shape = X.shape

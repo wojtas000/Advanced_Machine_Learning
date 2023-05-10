@@ -12,21 +12,57 @@ from feature_selectors import Debug, RandomForestSelector
 
 
 def performance_score(accuracy, n_features):
+    """
+    Compute performance score.
+    Args:
+        accuracy (float): Accuracy of the model.
+        n_features (int): Number of features.
+    Returns:
+        float: Performance score.
+    """
     return np.round(accuracy - 0.01 * np.abs(0.01*n_features - 1), 2)
 
 
 def single_evaluation(X_train, y_train, X_val, y_val, selector=PCA(n_components=5), classifier=RandomForestClassifier(), scaler=MinMaxScaler()):
-    
+    """
+    Evaluate single combination of selector and classifier.
+    Args:
+        X_train (pd.DataFrame): Training data.
+        y_train (pd.Series): Training labels.
+        X_val (pd.DataFrame): Validation data.
+        y_val (pd.Series): Validation labels.
+        selector (object): Feature selector.
+        classifier (object): Classifier.
+    Returns:
+        float: Accuracy of the model.
+        float: Performance score.
+        int: Number of features selected.
+    """
+
     pipeline = make_pipeline(scaler, selector, Debug(), classifier)
     pipeline.fit(X_train, y_train) 
     accuracy = pipeline.score(X_val, y_val)
     n_features = pipeline.steps[-2][1].shape[1]
     perf_score = performance_score(accuracy, n_features)
+    
     return accuracy, perf_score, n_features
 
 
 def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, n_features):
-    
+    """
+    Evaluate all combinations of selectors and classifiers.
+    Args:
+        X_train (pd.DataFrame): Training data.
+        y_train (pd.Series): Training labels.
+        X_val (pd.DataFrame): Validation data.
+        y_val (pd.Dataframe): Validation labels.
+        selectors (list): List of feature selectors.
+        classifiers (list): List of classifiers.
+        n_features (list): List of numbers of features.
+    Returns:
+        df (pd.Dataframe): Dataframe containing evaluation metrics of the selector-classifier combinations.
+
+    """
     df = pd.DataFrame(columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])
 
     for selector in selectors:
@@ -51,6 +87,7 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, n_fe
 
 if __name__=="__main__":
     
+    # test full evaluation
     X, y = load_breast_cancer(return_X_y=True)
     X = pd.DataFrame(X)
     y = pd.Series(y)
@@ -62,6 +99,7 @@ if __name__=="__main__":
     df = full_evaluation(X_train, y_train, X_valid, y_valid, selectors, classifiers, n_features)
     print(df)
 
+    # test single evaluation
     selector = RandomForestSelector()
     classifier = RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1)
     score, perf_score = single_evaluation(X_train, y_train, X_valid, y_valid, selector, classifier)
