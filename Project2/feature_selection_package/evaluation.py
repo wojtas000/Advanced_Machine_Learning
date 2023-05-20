@@ -22,7 +22,7 @@ def performance_score(accuracy, n_features):
     Returns:
         float: Performance score.
     """
-    return np.round(accuracy - 0.01 * np.abs(0.01*n_features - 1), 4)
+    return np.round(accuracy - 0.01 * max(0, 0.01*n_features - 1), 4)
 
 def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()):
 
