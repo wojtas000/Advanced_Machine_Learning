@@ -4,6 +4,7 @@ from sklearn.feature_selection import mutual_info_classif
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.datasets import load_breast_cancer
+from sklearn.feature_selection import SelectKBest
 
 
 # CLASSES
@@ -21,10 +22,15 @@ class CorrelationSelector(BaseEstimator, TransformerMixin):
         """
         self.n_features = n_features
         self.features = None
+        self.support_ = None
     
     def fit(self, X, y):
+        X = pd.DataFrame(X)
+        X.reset_index(drop=True, inplace=True)
         corr = pd.DataFrame(X).corrwith(pd.Series(y))
-        self.features = corr.abs().sort_values(ascending=False).iloc[:self.n_features].index
+        self.features = corr.abs().sort_values(ascending=False).iloc[:self.n_features].index.to_list()
+        self.support_ = np.array([True if feature in self.features else False for feature in X.columns])
+
         return self
     
     def transform(self, X):
@@ -47,9 +53,13 @@ class MutualInformationSelector(BaseEstimator, TransformerMixin):
 
         self.n_features = n_features
         self.features = None
+        self.support_ = None
     
     def fit(self, X, y):
+        X = pd.DataFrame(X)
+        X.reset_index(drop=True, inplace=True)
         self.features = mutual_info_classif(X, y).argsort()[-self.n_features:][::-1]
+        self.support_ = np.array([True if feature in self.features else False for feature in X.columns])
         return self
     
     def transform(self, X):
@@ -75,8 +85,11 @@ class RandomForestSelector(BaseEstimator, TransformerMixin):
         self.n_features = n_features
         self.threshold = threshold
         self.features = None
+        self.support_ = None
     
     def fit(self, X, y):
+        X = pd.DataFrame(X)
+        X.reset_index(drop=True, inplace=True)
         clf = RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1)
         clf.fit(X, y)
         importances = pd.Series(clf.feature_importances_)
@@ -84,6 +97,7 @@ class RandomForestSelector(BaseEstimator, TransformerMixin):
             self.features = self.high_importance_features(importances, self.threshold)
         else:
             self.features = self.top_n_features(importances, self.n_features)
+        self.support_ = np.array([True if feature in self.features else False for feature in X.columns])
 
         return self
     
@@ -109,3 +123,68 @@ class Debug(BaseEstimator, TransformerMixin):
 
     def fit(self, X, y=None):
         return self
+
+
+class EnsembleSelector(BaseEstimator, TransformerMixin):
+    """
+    Ensemble feature selector.
+    """
+
+    def __init__(self, selectors):
+        """
+        Args:
+            selectors (list): List of feature selectors.
+        """
+
+        self.selectors = selectors
+        self.features = None
+        self.support_ = None
+    
+    def fit(self, X, y):
+        self.features = self.select_features(X, y)
+        self.support_ = np.zeros(X.shape[1], dtype=bool)
+        self.support_[self.features] = True
+        return self
+    
+    def transform(self, X):
+        return pd.DataFrame(X)[self.features]
+    
+    def fit_transform(self, X, y):
+        self.fit(X, y)
+        return self.transform(X)
+    
+    def select_features(self, X, y):
+        total_support = np.zeros(X.shape[1], dtype=int)
+        for selector in self.selectors:
+            selector.fit(X, y)
+            if isinstance(selector, SelectKBest):
+                support = selector.get_support()
+            else:
+                support = selector.support_
+        
+            total_support += support.astype(int)
+        threshold = len(self.selectors) // 2 + 1
+        features = np.where(total_support >= threshold)[0]
+        return features
+
+
+
+if __name__ == "__main__":
+    X, y = load_breast_cancer(return_X_y=True)
+    selector = MutualInformationSelector(n_features=5)
+    selector.fit(X, y)
+    print(selector.features)
+    print(selector.support_)
+    selector2 = CorrelationSelector(n_features=5)
+    selector2.fit(X, y)
+    print(selector2.features)
+    print(type(selector2.features))
+    print(selector2.support_)
+    selector3 = RandomForestSelector(n_features=5)
+    selector3.fit(X, y)
+    print(selector3.features)
+    print(selector3.support_)
+    selectors = [CorrelationSelector(n_features=5), MutualInformationSelector(n_features=5), RandomForestSelector(n_features=5)]
+    ensemble = EnsembleSelector(selectors)
+    ensemble.fit(X, y)
+    print(ensemble.features)
