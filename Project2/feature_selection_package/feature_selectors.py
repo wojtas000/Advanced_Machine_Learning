@@ -1,11 +1,10 @@
-import pandas as pd
 import numpy as np
-from sklearn.feature_selection import mutual_info_classif
-from sklearn.ensemble import RandomForestClassifier
+import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.datasets import load_breast_cancer
-from sklearn.feature_selection import SelectKBest
-
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.feature_selection import RFE, SelectKBest, mutual_info_classif
+from sklearn.linear_model import LogisticRegression
 
 # CLASSES
 
@@ -29,6 +28,37 @@ class CorrelationSelector(BaseEstimator, TransformerMixin):
         X.reset_index(drop=True, inplace=True)
         corr = pd.DataFrame(X).corrwith(pd.Series(y))
         self.features = corr.abs().sort_values(ascending=False).iloc[:self.n_features].index.to_list()
+        self.support_ = np.array([True if feature in self.features else False for feature in X.columns])
+
+        return self
+    
+    def transform(self, X):
+        return pd.DataFrame(X)[self.features]
+    
+    def fit_transform(self, X, y):
+        self.fit(X, y)
+        return self.transform(X)
+
+class KbestSelector(BaseEstimator, TransformerMixin):
+    """
+    Select features based on correlation with target.
+    """
+
+    def __init__(self, n_features=10):
+        """
+        Args:
+            n_features (int): Number of features to select.
+        """
+        self.n_features = n_features
+        self.features = None
+        self.support_ = None
+    
+    def fit(self, X, y):
+        X = pd.DataFrame(X)
+        X.reset_index(drop=True, inplace=True)
+        kbest = SelectKBest(k=self.n_features)
+        kbest.fit(X, y)
+        self.features = X.columns[kbest.get_support()]
         self.support_ = np.array([True if feature in self.features else False for feature in X.columns])
 
         return self
@@ -184,7 +214,11 @@ if __name__ == "__main__":
     selector3.fit(X, y)
     print(selector3.features)
     print(selector3.support_)
-    selectors = [CorrelationSelector(n_features=5), MutualInformationSelector(n_features=5), RandomForestSelector(n_features=5)]
+    selector4 = KbestSelector(n_features=5)
+    selector4.fit(X, y)
+    print(selector4.features)
+    print(selector4.support_)
+    selectors = [CorrelationSelector(n_features=5), MutualInformationSelector(n_features=5), RandomForestSelector(n_features=5), KbestSelector(n_features=5)]
     ensemble = EnsembleSelector(selectors)
     ensemble.fit(X, y)
     print(ensemble.features)
