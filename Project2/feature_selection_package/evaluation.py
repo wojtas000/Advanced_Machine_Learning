@@ -1,0 +1,118 @@
+import numpy as np
+import pandas as pd
+from copy import copy
+from sklearn.decomposition import PCA
+from sklearn.svm import SVC
+from sklearn.datasets import load_breast_cancer
+from sklearn.ensemble import RandomForestClassifier
+from boruta import BorutaPy
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.pipeline import make_pipeline, FeatureUnion, FunctionTransformer
+from feature_selection_package.feature_selectors import Debug, RandomForestSelector, CorrelationSelector
+from sklearn.feature_selection import SelectKBest
+from sklearn.base import BaseEstimator, TransformerMixin
+
+
+def performance_score(accuracy, n_features):
+    """
+    Compute performance score.
+    Args:
+        accuracy (float): Accuracy of the model.
+        n_features (int): Number of features.
+    Returns:
+        float: Performance score.
+    """
+    return np.round(accuracy - 0.01 * np.abs(0.01*n_features - 1), 4)
+
+def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()):
+
+    if isinstance(selectors, list):
+        pipeline = make_pipeline(scaler, *selectors)
+    else:
+        pipeline = make_pipeline(scaler, selectors)
+    pipeline.fit_transform(X, y) 
+   
+    return pipeline
+
+def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier):
+    """
+    Evaluate single combination of selector and classifier.
+    Args:
+        X_train (pd.DataFrame): Training data.
+        y_train (pd.Series): Training labels.
+        X_val (pd.DataFrame): Validation data.
+        y_val (pd.Series): Validation labels.
+        selector (object): Feature selector.
+        classifier (object): Classifier.
+    Returns:
+        float: Accuracy of the model.
+        float: Performance score.
+        int: Number of features selected.
+    """
+    transformer = FunctionTransformer(feature_selection_pipeline.transform)
+    pipeline = make_pipeline(transformer, Debug(), classifier)
+    pipeline.fit(X_train, y_train) 
+    accuracy = pipeline.score(X_val, y_val)
+    n_features = pipeline.steps[-2][1].shape[1]
+    perf_score = performance_score(accuracy, n_features)
+    return accuracy, perf_score, n_features
+
+def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers):
+    """
+    Evaluate all combinations of selectors and classifiers.
+    Args:
+        X_train (pd.DataFrame): Training data.
+        y_train (pd.Series): Training labels.
+        X_val (pd.DataFrame): Validation data.
+        y_val (pd.Dataframe): Validation labels.
+        selectors (list): List of feature selectors.
+        classifiers (list): List of classifiers.
+        n_features (list): List of numbers of features.
+    Returns:
+        df (pd.Dataframe): Dataframe containing evaluation metrics of the selector-classifier combinations.
+
+    """
+    df = pd.DataFrame(columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])
+
+    for selector in selectors:
+        feature_selection_pipeline = feature_selection(X_train, y_train, selector)
+        for classifier in classifiers:
+            accuracy, perf_score, n_features = single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier)
+            
+            if isinstance(selector, SelectKBest):
+                selector_name = selector.__class__.__name__ + '_' + selector.score_func.__name__
+            else:
+                selector_name = selector.__class__.__name__
+            
+            if isinstance(classifier, SVC):
+                classifier_name = classifier.__class__.__name__ + '_' + classifier.kernel
+            else:
+                classifier_name = classifier.__class__.__name__
+            
+            df = pd.concat([df, pd.DataFrame([[selector_name, classifier_name, n_features, accuracy, perf_score]], columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])])
+
+    return df
+
+
+if __name__=="__main__":
+    
+    X, y = load_breast_cancer(return_X_y=True)
+    X = pd.DataFrame(X)
+    y = pd.Series(y)
+    X_train, X_valid = X.iloc[:400], X.iloc[400:]
+    y_train, y_valid = y.iloc[:400], y.iloc[400:]
+    # selectors = [PCA(n_components=20), RandomForestSelector(n_features=10), CorrelationSelector(n_features=5)]
+    selectors = [CorrelationSelector(n_features=5)]
+    classifiers = [RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1), SVC(kernel='linear', random_state=0), SVC(kernel='rbf', random_state=0)]
+    n_features = [2, 3, 4, 5]
+    results = pd.DataFrame(columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])
+    for n in n_features:
+        selectors = [CorrelationSelector(n_features=n)]
+        df = full_evaluation(X_train, y_train, X_valid, y_valid, selectors, classifiers)
+        results = pd.concat([results, df])
+    print(results)
+
+    # selector = [RandomForestSelector(n_features=10), Debug(), CorrelationSelector(n_features=5)]
+    # classifier = RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1)
+    # score, perf_score, n_features = single_evaluation(X_train, y_train, X_valid, y_valid, selector, classifier)
+    # print(score, perf_score, n_features)
