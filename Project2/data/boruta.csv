@@ -1,0 +1,7 @@
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score
+BorutaPy,SVC_rbf,165,0.9803063457330415,0.9738
+BorutaPy,SVC_linear,165,0.9715536105032823,0.9651
+BorutaPy,DecisionTreeClassifier,165,0.9332603938730853,0.9268
+BorutaPy,XGBClassifier,165,0.9693654266958425,0.9629
+BorutaPy,RandomForestClassifier,165,0.87527352297593,0.8688
+BorutaPy,LogisticRegression,165,0.9693654266958425,0.9629

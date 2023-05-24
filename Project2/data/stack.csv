@@ -1,0 +1,7 @@
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score
+list,SVC_rbf,100,0.9715536105032823,0.9716
+list,SVC_linear,100,0.9671772428884027,0.9672
+list,DecisionTreeClassifier,100,0.9354485776805251,0.9354
+list,XGBClassifier,100,0.9693654266958425,0.9694
+list,RandomForestClassifier,100,0.8818380743982495,0.8818
+list,LogisticRegression,100,0.9649890590809628,0.965

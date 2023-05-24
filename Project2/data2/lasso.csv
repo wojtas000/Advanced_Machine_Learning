@@ -1,0 +1,10 @@
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score
+Lasso,Lasso,3,0.5775,0.5775
+Lasso,Lasso,40,0.5925,0.5925
+Lasso,Lasso,333,0.5525,0.5292
+Lasso,Lasso,474,0.54,0.5026
+Lasso,Lasso,499,0.54,0.5001
+Lasso,Lasso,500,0.5525,0.5125
+Lasso,Lasso,500,0.5525,0.5125
+Lasso,Lasso,500,0.55,0.51
+Lasso,Lasso,500,0.55,0.51
