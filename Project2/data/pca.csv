@@ -1,25 +1,31 @@
-Selector,Classifier,Number_of_Features,Accuracy,Performance_score
-PCA,SVC_rbf,10,0.9121977186311787,0.9122
-PCA,SVC_linear,10,0.8940988593155894,0.8941
-PCA,DecisionTreeClassifier,10,0.9290291508238276,0.929
-PCA,XGBClassifier,10,0.9414651457541192,0.9415
-PCA,RandomForestClassifier,10,0.9014651457541192,0.9015
-PCA,LogisticRegression,10,0.8707325728770596,0.8707
-PCA,SVC_rbf,20,0.9060988593155893,0.9061
-PCA,SVC_linear,20,0.8987325728770597,0.8987
-PCA,DecisionTreeClassifier,20,0.9416628643852978,0.9417
-PCA,XGBClassifier,20,0.9374651457541192,0.9375
-PCA,RandomForestClassifier,20,0.8580988593155894,0.8581
-PCA,LogisticRegression,20,0.8953662864385298,0.8954
-PCA,SVC_rbf,50,0.9180988593155893,0.9181
-PCA,SVC_linear,50,0.9254651457541192,0.9255
-PCA,DecisionTreeClassifier,50,0.936831432192649,0.9368
-PCA,XGBClassifier,50,0.9494651457541192,0.9495
-PCA,RandomForestClassifier,50,0.8667325728770596,0.8667
-PCA,LogisticRegression,50,0.9153662864385297,0.9154
-PCA,SVC_rbf,80,0.9233662864385297,0.9234
-PCA,SVC_linear,80,0.9300988593155893,0.9301
-PCA,DecisionTreeClassifier,80,0.8980988593155894,0.8981
-PCA,XGBClassifier,80,0.9374651457541192,0.9375
-PCA,RandomForestClassifier,80,0.8233662864385298,0.8234
-PCA,LogisticRegression,80,0.9153662864385297,0.9154
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score,Supported_Features
+PCA,SVC_rbf,10,0.9201977186311787,0.9202,[ True  True  True ...  True  True  True]
+PCA,SVC_linear,10,0.8947325728770597,0.8947,[ True  True  True ...  True  True  True]
+PCA,DecisionTreeClassifier,10,0.9410291508238277,0.941,[ True  True  True ...  True  True  True]
+PCA,XGBClassifier,10,0.9374651457541192,0.9375,[ True  True  True ...  True  True  True]
+PCA,RandomForestClassifier,10,0.8928314321926489,0.8928,[ True  True  True ...  True  True  True]
+PCA,LogisticRegression,10,0.8667325728770596,0.8667,[ True  True  True ...  True  True  True]
+PCA,SVC_rbf,20,0.9140988593155893,0.9141,[ True  True  True ...  True  True  True]
+PCA,SVC_linear,20,0.9027325728770597,0.9027,[ True  True  True ...  True  True  True]
+PCA,DecisionTreeClassifier,20,0.9067325728770596,0.9067,[ True  True  True ...  True  True  True]
+PCA,XGBClassifier,20,0.940831432192649,0.9408,[ True  True  True ...  True  True  True]
+PCA,RandomForestClassifier,20,0.8700988593155894,0.8701,[ True  True  True ...  True  True  True]
+PCA,LogisticRegression,20,0.8833662864385298,0.8834,[ True  True  True ...  True  True  True]
+PCA,SVC_rbf,30,0.9220988593155893,0.9221,[ True  True  True ...  True  True  True]
+PCA,SVC_linear,30,0.9067325728770596,0.9067,[ True  True  True ...  True  True  True]
+PCA,DecisionTreeClassifier,30,0.9401977186311787,0.9402,[ True  True  True ...  True  True  True]
+PCA,XGBClassifier,30,0.9361977186311787,0.9362,[ True  True  True ...  True  True  True]
+PCA,RandomForestClassifier,30,0.8593662864385297,0.8594,[ True  True  True ...  True  True  True]
+PCA,LogisticRegression,30,0.8753662864385298,0.8754,[ True  True  True ...  True  True  True]
+PCA,SVC_rbf,50,0.9187325728770596,0.9187,[ True  True  True ...  True  True  True]
+PCA,SVC_linear,50,0.9214651457541192,0.9215,[ True  True  True ...  True  True  True]
+PCA,DecisionTreeClassifier,50,0.9401977186311787,0.9402,[ True  True  True ...  True  True  True]
+PCA,XGBClassifier,50,0.936831432192649,0.9368,[ True  True  True ...  True  True  True]
+PCA,RandomForestClassifier,50,0.8667325728770596,0.8667,[ True  True  True ...  True  True  True]
+PCA,LogisticRegression,50,0.9113662864385297,0.9114,[ True  True  True ...  True  True  True]
+PCA,SVC_rbf,75,0.9267325728770596,0.9267,[ True  True  True ...  True  True  True]
+PCA,SVC_linear,75,0.9260988593155893,0.9261,[ True  True  True ...  True  True  True]
+PCA,DecisionTreeClassifier,75,0.9094651457541192,0.9095,[ True  True  True ...  True  True  True]
+PCA,XGBClassifier,75,0.9494651457541192,0.9495,[ True  True  True ...  True  True  True]
+PCA,RandomForestClassifier,75,0.8073662864385298,0.8074,[ True  True  True ...  True  True  True]
+PCA,LogisticRegression,75,0.9153662864385297,0.9154,[ True  True  True ...  True  True  True]

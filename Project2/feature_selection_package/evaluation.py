@@ -35,9 +35,17 @@ def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()
         pipeline = make_pipeline(scaler, *selectors)
     else:
         pipeline = make_pipeline(scaler, selectors)
-    pipeline.fit_transform(X, y) 
+    pipeline.fit_transform(X, y)
+    feature_selection_model = pipeline.steps[-1][-1]
+    if isinstance(feature_selection_model, SelectKBest):
+        supported_features = feature_selection_model.get_support()
+    elif isinstance(feature_selection_model, PCA):
+        supported_features = np.ones(X.shape[1], dtype=bool)
+    else:
+        supported_features = feature_selection_model.support_
    
-    return pipeline
+    return pipeline, supported_features
+
 
 def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier, dataset_type='artificial'):
     """
@@ -57,11 +65,20 @@ def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline
     transformer = FunctionTransformer(feature_selection_pipeline.transform)
     pipeline = make_pipeline(transformer, Debug(), classifier)
     pipeline.fit(X_train, y_train)
+
+    # predict validation data
     y_pred = pipeline.predict(X_val)
-    balanced_accuracy = balanced_accuracy_score(y_val, y_pred) 
+
+    # get number of features
     n_features = pipeline.steps[-2][1].shape[1]
+    
+    # compute performance score and accuracy
+    balanced_accuracy = balanced_accuracy_score(y_val, y_pred) 
     perf_score = performance_score(balanced_accuracy, n_features, dataset_type)
+
+
     return balanced_accuracy, perf_score, n_features
+
 
 def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, dataset_type):
     """
@@ -78,10 +95,10 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, data
         df (pd.Dataframe): Dataframe containing evaluation metrics of the selector-classifier combinations.
 
     """
-    df = pd.DataFrame(columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])
+    df = pd.DataFrame(columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score', 'Supported_Features'])
 
     for selector in selectors:
-        feature_selection_pipeline = feature_selection(X_train, y_train, selector)
+        feature_selection_pipeline, supported_features = feature_selection(X_train, y_train, selector)
         for classifier in classifiers:
             accuracy, perf_score, n_features = single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier, dataset_type)
             
@@ -95,9 +112,10 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, data
             else:
                 classifier_name = classifier.__class__.__name__
             
-            df = pd.concat([df, pd.DataFrame([[selector_name, classifier_name, n_features, accuracy, perf_score]], columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score'])])
+            df = pd.concat([df, pd.DataFrame([[selector_name, classifier_name, n_features, accuracy, perf_score, supported_features]], columns=['Selector', 'Classifier', 'Number_of_Features', 'Accuracy', 'Performance_score', 'Supported_Features'])])
 
     return df
+
 
 
 if __name__=="__main__":
