@@ -195,6 +195,7 @@ class EnsembleSelector(BaseEstimator, TransformerMixin):
             total_support += support.astype(int)
         threshold = len(self.selectors) // 2 + 1
         features = np.where(total_support >= threshold)[0]
+        self.support_ = (total_support >= threshold)
         return features
 
 

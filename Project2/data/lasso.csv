@@ -1,10 +1,8 @@
-Selector,Classifier,Number_of_Features,Accuracy,Performance_score
-Lasso,Lasso,0,0.8632385120350109,0.8632
-Lasso,Lasso,0,0.8632385120350109,0.8632
-Lasso,Lasso,3,0.8676148796498906,0.8676
-Lasso,Lasso,47,0.9595185995623632,0.9595
-Lasso,Lasso,174,0.9803063457330415,0.9729
-Lasso,Lasso,290,0.9835886214442013,0.9646
-Lasso,Lasso,373,0.9846827133479212,0.9574
-Lasso,Lasso,576,0.9814004376367614,0.9338
-Lasso,Lasso,1916,0.9715536105032823,0.79
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score,Supported_Features
+Lasso,Lasso,0,0.5,0.5,[False False False ... False False False]
+Lasso,Lasso,3,0.5193662864385298,0.5194,[False False False ... False False False]
+Lasso,Lasso,27,0.7734651457541192,0.7735,[False False False ... False False False]
+Lasso,Lasso,47,0.8654651457541191,0.8655,[False False False ... False False False]
+Lasso,Lasso,120,0.932831432192649,0.9308,[False False False ... False False False]
+Lasso,Lasso,174,0.9414651457541192,0.9341,[False False False ... False False False]
+Lasso,Lasso,290,0.9534651457541192,0.9345,[False False False ... False False False]
