@@ -13,6 +13,11 @@ from sklearn.feature_selection import SelectKBest
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.metrics import balanced_accuracy_score
 
+def artificial_dataset_score(BA, m):
+    return BA - 0.01 * np.max(m/5 - 1, 0)
+
+def sms_dataset_score(BA, m):
+    return BA - 0.01 * np.max(m/100 - 1, 0)
 
 def performance_score(accuracy, n_features, dataset_type=None):
     """
