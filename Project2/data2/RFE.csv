@@ -4,4 +4,4 @@ RFE,SVC_linear,500,0.52,0.48
 RFE,DecisionTreeClassifier,500,0.7325,0.6925
 RFE,XGBClassifier,500,0.81,0.77
 RFE,RandomForestClassifier,500,0.6225,0.5825
-RFE,LogisticRegression,500,0.5325,0.4925
+RFE,LogisticRegression,500,0.535,0.495

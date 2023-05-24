@@ -11,9 +11,10 @@ from sklearn.pipeline import make_pipeline, FeatureUnion, FunctionTransformer
 from feature_selection_package.feature_selectors import Debug, RandomForestSelector, CorrelationSelector
 from sklearn.feature_selection import SelectKBest
 from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.metrics import balanced_accuracy_score
 
 
-def performance_score(accuracy, n_features):
+def performance_score(accuracy, n_features, dataset_type=None):
     """
     Compute performance score.
     Args:
@@ -22,7 +23,11 @@ def performance_score(accuracy, n_features):
     Returns:
         float: Performance score.
     """
-    return np.round(accuracy - 0.01 * max(0, 0.01*n_features - 1), 4)
+    if dataset_type == 'artificial':
+        return np.round(accuracy - 0.01 * max(0, 0.2*n_features - 1), 4)
+    else:
+        return np.round(accuracy - 0.01 * max(0, 0.01*n_features - 1), 4)
+
 
 def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()):
 
@@ -34,7 +39,7 @@ def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()
    
     return pipeline
 
-def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier):
+def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier, dataset_type='artificial'):
     """
     Evaluate single combination of selector and classifier.
     Args:
@@ -51,13 +56,14 @@ def single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline
     """
     transformer = FunctionTransformer(feature_selection_pipeline.transform)
     pipeline = make_pipeline(transformer, Debug(), classifier)
-    pipeline.fit(X_train, y_train) 
-    accuracy = pipeline.score(X_val, y_val)
+    pipeline.fit(X_train, y_train)
+    y_pred = pipeline.predict(X_val)
+    balanced_accuracy = balanced_accuracy_score(y_val, y_pred) 
     n_features = pipeline.steps[-2][1].shape[1]
-    perf_score = performance_score(accuracy, n_features)
-    return accuracy, perf_score, n_features
+    perf_score = performance_score(balanced_accuracy, n_features, dataset_type)
+    return balanced_accuracy, perf_score, n_features
 
-def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers):
+def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers, dataset_type):
     """
     Evaluate all combinations of selectors and classifiers.
     Args:
@@ -77,7 +83,7 @@ def full_evaluation(X_train, y_train, X_val, y_val, selectors, classifiers):
     for selector in selectors:
         feature_selection_pipeline = feature_selection(X_train, y_train, selector)
         for classifier in classifiers:
-            accuracy, perf_score, n_features = single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier)
+            accuracy, perf_score, n_features = single_evaluation(X_train, y_train, X_val, y_val, feature_selection_pipeline, classifier, dataset_type)
             
             if isinstance(selector, SelectKBest):
                 selector_name = selector.__class__.__name__ + '_' + selector.score_func.__name__
