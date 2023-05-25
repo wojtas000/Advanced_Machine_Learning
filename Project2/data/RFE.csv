@@ -1,7 +1,19 @@
-Selector,Classifier,Number_of_Features,Accuracy,Performance_score
-RFE,SVC_rbf,7000,0.9463894967177243,0.2564
-RFE,SVC_linear,7000,0.9803063457330415,0.2903
-RFE,DecisionTreeClassifier,7000,0.9452954048140044,0.2553
-RFE,XGBClassifier,7000,0.9715536105032823,0.2816
-RFE,RandomForestClassifier,7000,0.8632385120350109,0.1732
-RFE,LogisticRegression,7000,0.9770240700218819,0.287
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score,Supported_Features
+RFE,SVC_rbf,10,0.8134651457541191,0.8135,[False False False ... False False False]
+RFE,SVC_linear,10,0.7761977186311788,0.7762,[False False False ... False False False]
+RFE,DecisionTreeClassifier,10,0.722296577946768,0.7223,[False False False ... False False False]
+RFE,XGBClassifier,10,0.7974651457541191,0.7975,[False False False ... False False False]
+RFE,RandomForestClassifier,10,0.6614651457541192,0.6615,[False False False ... False False False]
+RFE,LogisticRegression,10,0.7100988593155894,0.7101,[False False False ... False False False]
+RFE,SVC_rbf,50,0.8256628643852979,0.8257,[False False False ... False False False]
+RFE,SVC_linear,50,0.8130291508238277,0.813,[False False False ... False False False]
+RFE,DecisionTreeClassifier,50,0.7582965779467681,0.7583,[False False False ... False False False]
+RFE,XGBClassifier,50,0.8168314321926489,0.8168,[False False False ... False False False]
+RFE,RandomForestClassifier,50,0.592,0.592,[False False False ... False False False]
+RFE,LogisticRegression,50,0.7648314321926489,0.7648,[False False False ... False False False]
+RFE,SVC_rbf,100,0.8344942965779467,0.8345,[False False False ... False False False]
+RFE,SVC_linear,100,0.8195640050697085,0.8196,[False False False ... False False False]
+RFE,DecisionTreeClassifier,100,0.7504942965779468,0.7505,[False False False ... False False False]
+RFE,XGBClassifier,100,0.8208314321926489,0.8208,[False False False ... False False False]
+RFE,RandomForestClassifier,100,0.5473662864385298,0.5474,[False False False ... False False False]
+RFE,LogisticRegression,100,0.7829302915082382,0.7829,[False False False ... False False False]
