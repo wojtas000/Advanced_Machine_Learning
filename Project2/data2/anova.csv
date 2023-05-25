@@ -1,5 +1,5 @@
 Selector,Classifier,Number_of_Features,Accuracy,Performance_score,Supported_Features
-RandomForestSelector,SVC_rbf,10,0.8237179487179487,0.8137,"[False False False False False False False False False False False False
+SelectKBest_f_classif,SVC_rbf,10,0.8137019230769231,0.8037,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -35,13 +35,13 @@ RandomForestSelector,SVC_rbf,10,0.8237179487179487,0.8137,"[False False False Fa
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,SVC_linear,10,0.6233974358974359,0.6134,"[False False False False False False False False False False False False
+SelectKBest_f_classif,SVC_linear,10,0.6209935897435898,0.611,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -77,13 +77,13 @@ RandomForestSelector,SVC_linear,10,0.6233974358974359,0.6134,"[False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,10,0.7177483974358975,0.7077,"[False False False False False False False False False False False False
+SelectKBest_f_classif,DecisionTreeClassifier,10,0.7047275641025641,0.6947,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -119,13 +119,13 @@ RandomForestSelector,DecisionTreeClassifier,10,0.7177483974358975,0.7077,"[False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,XGBClassifier,10,0.819911858974359,0.8099,"[False False False False False False False False False False False False
+SelectKBest_f_classif,XGBClassifier,10,0.8223157051282051,0.8123,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -161,13 +161,13 @@ RandomForestSelector,XGBClassifier,10,0.819911858974359,0.8099,"[False False Fal
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,RandomForestClassifier,10,0.7081330128205128,0.6981,"[False False False False False False False False False False False False
+SelectKBest_f_classif,RandomForestClassifier,10,0.671875,0.6619,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -203,13 +203,13 @@ RandomForestSelector,RandomForestClassifier,10,0.7081330128205128,0.6981,"[False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,LogisticRegression,10,0.5983573717948718,0.5884,"[False False False False False False False False False False False False
+SelectKBest_f_classif,LogisticRegression,10,0.6033653846153846,0.5934,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
@@ -245,15 +245,15 @@ RandomForestSelector,LogisticRegression,10,0.5983573717948718,0.5884,"[False Fal
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+ False False False False False False False False False False  True False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
+ False False False False False False False  True False False False False
  False False False False False False False False False False False False
  False False False False False False False False]"
-RandomForestSelector,SVC_rbf,20,0.8361378205128205,0.8061,"[False False False False False False False False False False False False
+SelectKBest_f_classif,SVC_rbf,20,0.7514022435897436,0.7214,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -262,40 +262,40 @@ RandomForestSelector,SVC_rbf,20,0.8361378205128205,0.8061,"[False False False Fa
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,SVC_linear,20,0.6131810897435898,0.5832,"[False False False False False False False False False False False False
+SelectKBest_f_classif,SVC_linear,20,0.5799278846153846,0.5499,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -304,40 +304,40 @@ RandomForestSelector,SVC_linear,20,0.6131810897435898,0.5832,"[False False False
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,20,0.764823717948718,0.7348,"[False False False False False False False False False False False False
+SelectKBest_f_classif,DecisionTreeClassifier,20,0.7107371794871795,0.6807,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -346,40 +346,40 @@ RandomForestSelector,DecisionTreeClassifier,20,0.764823717948718,0.7348,"[False 
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,XGBClassifier,20,0.8471554487179487,0.8172,"[False False False False False False False False False False False False
+SelectKBest_f_classif,XGBClassifier,20,0.797275641025641,0.7673,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -388,40 +388,40 @@ RandomForestSelector,XGBClassifier,20,0.8471554487179487,0.8172,"[False False Fa
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,RandomForestClassifier,20,0.7103365384615384,0.6803,"[False False False False False False False False False False False False
+SelectKBest_f_classif,RandomForestClassifier,20,0.7055288461538461,0.6755,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -430,40 +430,40 @@ RandomForestSelector,RandomForestClassifier,20,0.7103365384615384,0.6803,"[False
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,LogisticRegression,20,0.6107772435897436,0.5808,"[False False False False False False False False False False False False
+SelectKBest_f_classif,LogisticRegression,20,0.5753205128205128,0.5453,"[False False False False False False False False False False False False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False False False False False False
  False False False False  True False False False False False False False
@@ -472,1042 +472,1042 @@ RandomForestSelector,LogisticRegression,20,0.6107772435897436,0.5808,"[False Fal
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
+ False False False False  True False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
+  True False False False False False False False False False False False
  False False False False False False False False False False False False
- False  True False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False False False False False False False False
  False False False False False  True False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False False False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,SVC_rbf,30,0.7948717948717949,0.7449,"[False False False False False False False False False False  True False
+SelectKBest_f_classif,SVC_rbf,30,0.6965144230769231,0.6465,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
  False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,SVC_linear,30,0.6081730769230769,0.5582,"[False False False False False False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,30,0.7622195512820513,0.7122,"[False False False False False False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,XGBClassifier,30,0.8175080128205128,0.7675,"[False False False False False False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,RandomForestClassifier,30,0.6794871794871795,0.6295,"[False False False False False False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,LogisticRegression,30,0.5987580128205128,0.5488,"[False False False False False False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False False False
- False False False False  True False False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
-  True False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False  True False False  True False False False False False False
- False False False False False False False False False False False False
-  True  True False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
-  True False  True False False False False False False False False False
- False False False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
- False False False False False False False False False False False False
- False False False False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,SVC_rbf,50,0.7303685897435898,0.6404,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,SVC_linear,50,0.5959535256410255,0.506,"[False False False False  True False False False False False  True False
+SelectKBest_f_classif,SVC_linear,30,0.5580929487179487,0.5081,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,50,0.7467948717948718,0.6568,"[False False False False  True False False False False False  True False
+SelectKBest_f_classif,DecisionTreeClassifier,30,0.7145432692307692,0.6645,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,XGBClassifier,50,0.8044871794871795,0.7145,"[False False False False  True False False False False False  True False
+SelectKBest_f_classif,XGBClassifier,30,0.7854567307692308,0.7355,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,RandomForestClassifier,50,0.6572516025641025,0.5673,"[False False False False  True False False False False False  True False
+SelectKBest_f_classif,RandomForestClassifier,30,0.6576522435897436,0.6077,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,LogisticRegression,50,0.5608974358974359,0.4709,"[False False False False  True False False False False False  True False
+SelectKBest_f_classif,LogisticRegression,30,0.5643028846153846,0.5143,"[False False False False False False False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False False
   True False False False False False False  True False False False False
  False False False False  True False False False False False False False
- False False False False False False False False False False False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False  True False False False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False  True False
-  True False False False False False False False False False False False
- False False False False False False False False  True False  True False
- False False False False False False False False False False False False
  False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False False False False False False False False False False
-  True  True False False False  True False False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False False False False False False
-  True False  True False False False False False False False False False
- False  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
+ False False False False False False False False  True False False False
  False False False False  True False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False False False False False False  True
- False  True False False False False False False False False  True False
- False False False False False False False  True False  True False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+ False False False False False False False False False  True False False
  False False False False False False False False False False False False
  False False False False  True False False  True False False False False
  False  True False False False False False False False False False False
  False  True False False False False False False]"
-RandomForestSelector,SVC_rbf,75,0.6885016025641025,0.5485,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
+SelectKBest_f_classif,SVC_rbf,50,0.6316105769230769,0.5416,"[False False False False  True False False False False False  True False
   True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
  False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
  False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,SVC_linear,75,0.5488782051282051,0.4089,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
-  True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
  False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,75,0.7518028846153846,0.6118,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
  False False False False False False False False False  True False False
  False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
-  True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,XGBClassifier,75,0.8000801282051282,0.6601,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
-  True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,RandomForestClassifier,75,0.6460336538461539,0.506,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
-  True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,LogisticRegression,75,0.524238782051282,0.3842,"[False False False False  True False False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False False
- False False False False False False False False False False False False
-  True False False False  True False False  True False False False False
- False False False False  True False False False False False False False
- False False False False False  True False False False  True False False
- False  True False False False  True False False False False False False
- False False False False False False False False False  True False False
- False False False False False False False False False False False False
- False False False False False False False False  True False  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False False False False False
- False False False False False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False False False False False  True False  True  True False
-  True False False False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False False  True False False False False
- False  True False  True False False False False  True False False False
- False False False False False False False False False False False False
- False False False False False False False False False False False False
- False  True  True False False  True False False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False False False False
- False False False False False  True False  True False False False False
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False False False False False False
- False False  True False  True False  True False False  True False False
- False False False False False False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True False False False False False False]"
-RandomForestSelector,SVC_rbf,100,0.6526442307692308,0.4626,"[False False  True False  True  True False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False  True
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
- False  True False  True False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
+ False False False False False False False False False False False False
  False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True  True False False False False False]"
-RandomForestSelector,SVC_linear,100,0.5484775641025641,0.3585,"[False False  True False  True  True False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False  True
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
+ False False False False False False False False False False False False
  False  True False  True False False False False  True False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True  True False False False False False]"
-RandomForestSelector,DecisionTreeClassifier,100,0.7572115384615384,0.5672,"[False False  True False  True  True False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False  True
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False False False False False]"
+SelectKBest_f_classif,SVC_linear,50,0.5570913461538461,0.4671,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
- False  True False  True False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
+ False False False False False False False False False False False False
  False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True  True False False False False False]"
-RandomForestSelector,XGBClassifier,100,0.7940705128205128,0.6041,"[False False  True False  True  True False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False  True
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
+ False False False False False False False False False False False False
  False  True False  True False False False False  True False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True  True False False False False False]"
-RandomForestSelector,RandomForestClassifier,100,0.6400240384615384,0.45,"[False False  True False  True  True False False False False  True False
  False False False False False False False False False False False False
- False False False False  True False False False False False False  True
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False False False False False]"
+SelectKBest_f_classif,DecisionTreeClassifier,50,0.7145432692307692,0.6245,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
- False  True False  True False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
+ False False False False False False False False False False False False
  False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
- False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
- False  True  True False False False False False]"
-RandomForestSelector,LogisticRegression,100,0.5240384615384616,0.334,"[False False  True False  True  True False False False False  True False
- False False False False False False False False False False False False
- False False False False  True False False False False False False  True
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
  False False False False False False False False  True False False False
-  True False False False  True False False  True False False False  True
-  True False False False  True False False False False False False False
- False False False False False  True False  True False  True False  True
- False  True False  True False  True False False False False False False
- False False  True False False False False False False  True False False
- False False False False False False False False False False False  True
- False False False False False False False False  True  True  True  True
- False False False False  True False False False  True False False False
- False False False False False False False False False  True False False
- False False False  True False False False False  True False False False
- False False False  True False False False  True False False False False
-  True False False  True False False False False False False False False
- False False False  True False False False  True False  True  True False
-  True False  True False False False False False False False False False
- False False False False  True False False False  True False  True False
- False False False False False False  True  True False False False False
+ False False False False False False False False False False False False
  False  True False  True False False False False  True False False False
  False False False False False False False False False False False False
- False False False False False False False False False  True False False
- False  True  True False False  True  True False False False False  True
- False False False  True False False False False False False False False
-  True  True False False False  True  True False False False False False
- False False False False False False  True  True False  True False False
- False False False False False  True False  True False False  True  True
-  True False  True False False False False False False False False False
-  True  True False False False False False False False False False  True
-  True False False False False False False False False False False False
- False False False False False False  True False False False  True False
-  True False False False False False False False False False False  True
- False False False False False False False  True False False False False
- False False  True False  True False  True False False  True False False
- False False False False  True False False False False False False  True
- False  True  True False False False False False  True False  True False
- False False  True False False False False  True False  True False  True
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
  False False False False False False  True False False False False False
- False False  True False  True False False  True False False False False
- False  True False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
  False  True  True False False False False False]"
+SelectKBest_f_classif,XGBClassifier,50,0.7654246794871795,0.6754,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False False False False False]"
+SelectKBest_f_classif,RandomForestClassifier,50,0.6183894230769231,0.5284,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False False False False False]"
+SelectKBest_f_classif,LogisticRegression,50,0.5612980769230769,0.4713,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False False False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False False False  True False False  True False False False False
+  True  True False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False False False False False False False False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True False False False  True False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False False False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True False False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False False False False False  True False
+  True False False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False False False False False]"
+SelectKBest_f_classif,SVC_rbf,75,0.6215945512820513,0.4816,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,SVC_linear,75,0.5661057692307692,0.4261,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,DecisionTreeClassifier,75,0.7103365384615384,0.5703,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,XGBClassifier,75,0.7632211538461539,0.6232,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,RandomForestClassifier,75,0.6342147435897436,0.4942,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,LogisticRegression,75,0.538661858974359,0.3987,"[False False False False  True False False False False False  True False
+  True False False False False False False False False False False False
+ False False  True False False False False False False False False False
+ False False  True False False False  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False  True False False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False False False False False False False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True False False False False False False
+  True False  True False False False False False False False False  True
+ False False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False False False
+  True False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False  True  True False  True  True False False False False False
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True False False False]"
+SelectKBest_f_classif,SVC_rbf,100,0.5943509615384616,0.4044,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
+SelectKBest_f_classif,SVC_linear,100,0.5612980769230769,0.3713,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
+SelectKBest_f_classif,DecisionTreeClassifier,100,0.7129407051282051,0.5229,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
+SelectKBest_f_classif,XGBClassifier,100,0.7824519230769231,0.5925,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
+SelectKBest_f_classif,RandomForestClassifier,100,0.6344150641025641,0.4444,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
+SelectKBest_f_classif,LogisticRegression,100,0.5552884615384616,0.3653,"[False False  True False  True False False False False False  True False
+  True False False False False False False False False False False  True
+ False False  True False False False False False False False False False
+ False False  True False False  True  True False  True False  True False
+  True False False False False False False  True False False False False
+ False False False False  True False False False False False False False
+ False  True  True False False False False False False False False False
+ False  True False False  True False False False False False False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False  True
+ False False False False False False False False  True False False False
+ False False False False  True False False False False False False False
+ False False  True False False False False False False  True False False
+ False False False False False False False False False False False False
+  True False False False False False False  True False  True False  True
+ False False False False  True  True False  True False False False False
+ False False False False  True False False  True False  True False False
+  True  True False  True False False False  True False False False False
+ False  True False False False  True False False  True False  True  True
+ False False False False False False False False False  True False False
+ False  True False  True False False False False  True False False False
+ False False False False False False False False False False False False
+  True False False False False False False False False False False False
+ False False  True False False  True  True False False False  True False
+ False False False False False False False False  True False  True False
+ False  True False False False  True False False False False False False
+ False False False False False  True False False False  True False  True
+ False False False False False  True False False False False False False
+  True False  True False  True False False False False False False  True
+  True False False False False False False False False False False False
+ False  True False False False False False False False False False False
+ False False False False False False  True False False False  True  True
+  True False False False False False False False False False False False
+ False False False False False False False  True False False False False
+ False False  True  True  True  True  True  True False False False  True
+  True False False False  True  True False False False False  True  True
+ False  True  True False False False False False False False  True False
+  True  True False False False False False False False  True  True False
+  True False False False False False False False False False  True False
+ False False False False  True False False  True False False False False
+ False  True False  True False False False False False False False False
+ False  True  True False  True  True False False]"
