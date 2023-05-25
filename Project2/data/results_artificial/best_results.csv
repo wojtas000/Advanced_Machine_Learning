@@ -1,0 +1,13 @@
+Selector,Classifier,Number_of_Features,Accuracy,Performance_score
+SelectKBest_f_classif,XGBClassifier,10,0.8223157051282051,0.8123
+BorutaPy,XGBClassifier,18,0.8393429487179487,0.8133
+SelectKBest_chi2,XGBClassifier,10,0.8223157051282051,0.8123
+CorrelationSelector,XGBClassifier,10,0.8223157051282051,0.8123
+ElasticNet,ElasticNet,12,0.6073717948717949,0.6074
+EnsembleSelector,XGBClassifier,10,0.8223157051282051,0.8123
+RandomForestSelector,XGBClassifier,20,0.8471554487179487,0.8172
+Lasso,Lasso,40,0.5939503205128205,0.594
+MutualInformationSelector,XGBClassifier,10,0.672676282051282,0.6627
+PCA,SVC_rbf,10,0.8046875,0.7947
+RFE,XGBClassifier,10,0.8541666666666667,0.8442
+list,XGBClassifier,10,0.852363782051282,0.8424
