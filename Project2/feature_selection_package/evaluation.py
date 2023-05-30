@@ -30,7 +30,17 @@ def performance_score(accuracy, n_features, dataset_type=None):
 
 
 def feature_selection(X, y, selectors=PCA(n_components=5), scaler=MinMaxScaler()):
-
+    """
+    Prepare feature selection pipeline and return supported features.
+    Args:
+        X (pd.DataFrame): Data.
+        y (pd.Series): Labels.
+        selectors: List of feature selectors (or single feature selector).
+        scaler (object): Scaler.
+    Returns:
+        pipeline (object): Feature selection pipeline.
+        supported_features (np.array): Array of supported features.
+    """
     if isinstance(selectors, list):
         pipeline = make_pipeline(scaler, *selectors)
     else:
@@ -125,7 +135,6 @@ if __name__=="__main__":
     y = pd.Series(y)
     X_train, X_valid = X.iloc[:400], X.iloc[400:]
     y_train, y_valid = y.iloc[:400], y.iloc[400:]
-    # selectors = [PCA(n_components=20), RandomForestSelector(n_features=10), CorrelationSelector(n_features=5)]
     selectors = [CorrelationSelector(n_features=5)]
     classifiers = [RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1), SVC(kernel='linear', random_state=0), SVC(kernel='rbf', random_state=0)]
     n_features = [2, 3, 4, 5]
@@ -135,8 +144,3 @@ if __name__=="__main__":
         df = full_evaluation(X_train, y_train, X_valid, y_valid, selectors, classifiers)
         results = pd.concat([results, df])
     print(results)
-
-    # selector = [RandomForestSelector(n_features=10), Debug(), CorrelationSelector(n_features=5)]
-    # classifier = RandomForestClassifier(n_estimators=100, random_state=0, n_jobs=-1)
-    # score, perf_score, n_features = single_evaluation(X_train, y_train, X_valid, y_valid, selector, classifier)
-    # print(score, perf_score, n_features)
